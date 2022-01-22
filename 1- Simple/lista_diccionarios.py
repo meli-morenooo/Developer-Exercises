@@ -27,3 +27,4 @@ def menor_mayor_edad(funcion):
 if __name__ == '__main__':
     # print(generar_lista_diccionarios())
     menor_mayor_edad(generar_lista_diccionarios())
+
