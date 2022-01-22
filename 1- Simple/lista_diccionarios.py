@@ -11,6 +11,19 @@ def generar_lista_diccionarios():
     lista.append(diccionario)
     return lista
 
-if __name__ == '__main__':
-    print(generar_lista_diccionarios())
+def menor_mayor_edad(funcion):
+    lista_ordenada = []
     
+    for d in funcion:
+        joven = min(d, key=d.get)
+        viejo = max(d, key=d.get)
+        dicc = sorted(d.items())
+            
+    print(joven)
+    print(viejo)
+    print(dicc)
+    
+    
+if __name__ == '__main__':
+    # print(generar_lista_diccionarios())
+    menor_mayor_edad(generar_lista_diccionarios())
