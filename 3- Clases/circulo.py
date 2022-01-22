@@ -7,7 +7,7 @@ class Circulo():
             print("El radio debe ser mayor a cero.")
             exit()
 
-    def setRadio(self):
+    def getRadio(self):
         return self.r
     
     def getArea(self):
@@ -20,7 +20,7 @@ class Circulo():
         return self.p
 
     def __str__(self):
-        return "\nRadio: " + str(self.setRadio()) + "\nArea: " + str(self.getArea()) + "\nPerimetro: " + str(self.getPerimetro()) + "\n"
+        return "\nRadio: " + str(self.getRadio()) + "\nArea: " + str(self.getArea()) + "\nPerimetro: " + str(self.getPerimetro()) + "\n"
 
     def __mul__(self, obj):
         n = self.r * obj.r
